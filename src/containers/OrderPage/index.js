@@ -12,8 +12,6 @@ import img1 from "../ProductListPage/images/img-5.jpg";
 
 import "./style.css";
 import { Breed } from "../../components/MaterialUI";
-// import img2 from "../images/samsung-s23ultra11.jpg";
-// import img1 from "../ProductListPage/images/"
 
 const OrderPage = (props) => {
   const dispatch = useDispatch();
@@ -56,7 +54,6 @@ const OrderPage = (props) => {
                 </div>
                 <div className="orderRow">
                   <div className="orderName">{item.productId.name}</div>
-                  {/* <div className="orderName">hello items</div> */}
                   <div className="orderPrice">
                     <BiRupee />
                     {item.payablePrice}

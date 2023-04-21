@@ -12,16 +12,6 @@ import Footer from "../Footer";
 import { generatePublicUrl } from "../../urlConfig";
 
 // import img1 from "../images/samsung-s23ultra11.jpg";
-import img5 from "../ProductListPage/images/samsung-s23ultra13.jpg";
-
-import img6 from "../ProductListPage/images/img-1.jpg";
-import img7 from "../ProductListPage/images/img-2.jpg";
-import img8 from "../ProductListPage/images/img-3.jpg";
-import img9 from "../ProductListPage/images/img-4.jpg";
-import img10 from "../ProductListPage/images/img-5.jpg";
-import img11 from "../ProductListPage/images/img-6.jpg";
-import img12 from "../ProductListPage/images/img-7.jpg";
-import img13 from "../ProductListPage/images/img-8.jpg";
 
 const ProductDetailsPage = (props) => {
   const dispatch = useDispatch();
@@ -53,11 +43,6 @@ const ProductDetailsPage = (props) => {
                 <img src={generatePublicUrl(thumb.img)} alt={thumb.img} />
               </div>
             ))}
-            {/* <img className="marg" src={img6} alt="img6" />
-             <img className="marg" src={img8} alt="img8" />
-             <img className="marg" src={img11} alt="img11" />
-             <img className="marg" src={img12} alt="img12" />
-             <img className="marg" src={img13} alt="img13" /> */}
           </div>
           <div className="productDescContainer">
             <div className="productDescImgContainer">

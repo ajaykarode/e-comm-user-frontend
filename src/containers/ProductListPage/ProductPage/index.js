@@ -5,11 +5,8 @@ import getParams from "../../../utils/getParams";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import Card from "../../../components/UI/Card";
-import { generatePublicUrl } from "../../../urlConfig";
 
 // import img1 from "../images/samsung-s23ultra11.jpg";
-import img2 from "../images/samsung-s23ultra11.jpg";
-import img3 from "../images/samsung-s23ultra12.jpg";
 
 const ProductPage = (props) => {
   const dispatch = useDispatch();

@@ -9,7 +9,7 @@ import Rating from "../../../components/UI/Rating";
 import Price from "../../../components/UI/Price";
 import { generatePublicUrl } from "../../../urlConfig";
 
-import img1 from "../images/samsung-s23ultra11.jpg";
+// import img1 from "../images/samsung-s23ultra11.jpg";
 
 const ProductStore = (props) => {
   const product = useSelector((state) => state.product);
@@ -19,8 +19,6 @@ const ProductStore = (props) => {
   useEffect(() => {
     const { match } = props;
     dispatch(getProductsBySlug(match.params.slug));
-    // console.log(props);
-    // dispatch(getProductsBySlug())
   }, []);
 
   return (
