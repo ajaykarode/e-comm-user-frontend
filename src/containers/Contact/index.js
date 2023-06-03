@@ -3,11 +3,12 @@ import Layout from "../../components/Layout";
 
 import img1 from "../HomePage/images/samsung-s23ultra11.jpg";
 import "./style.css";
+import Footer from "../Footer";
 
 const Contact = () => {
   return (
 <Layout>
-    <section className="contact-form">
+    {/* <section className="contact-form">
       <div className="container">
         <div className="form-wrapper">
           <div className="company-address">
@@ -76,7 +77,28 @@ const Contact = () => {
           </form>
         </div>
       </div>
+    </section> */}
+
+
+
+
+
+    <section id="contact">
+        <div className="contact-container containers">
+            <div className="contact-image">
+                <img src={img1} alt="" />
+            </div>
+            <div className="form-container">
+                <h2>Contact Us</h2>
+                <input type="text" placeholder=" Your Name" />
+                <input type="email" name="" id="" placeholder="Your Email" />
+                <textarea name="" id="" cols="30" rows="1" placeholder="Type Your Message Here"></textarea>
+                <a href="#" className="btni btni-primary adjust">Submit</a>
+            </div>
+        </div>
     </section>
+
+<Footer />
     </Layout>
   );
 };

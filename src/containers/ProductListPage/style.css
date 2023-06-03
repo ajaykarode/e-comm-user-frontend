@@ -16,7 +16,8 @@
 }
 .productInfo{
     text-align: center;
-    font-size: 12px;
+    font-size: 18px;
+    font-weight: bolder;
 
 }
 .productPrice{

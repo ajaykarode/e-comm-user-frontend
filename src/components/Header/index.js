@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import flipkartLogo from "../../images/logo/flipkart.png";
 import goldenStar from "../../images/logo/golden-start.png";
-import { IoIosArrowDown, IoIosCart, IoIosSearch } from "react-icons/io";
+import { IoIosArrowDown, IoIosSearch } from "react-icons/io";
 import {
   Modal,
   MaterialInput,
@@ -10,7 +10,7 @@ import {
   DropdownMenu,
 } from "../MaterialUI";
 import { useDispatch, useSelector } from "react-redux";
-import { login, signout, getCartItems, signup as _signup } from "../../actions";
+import { login, signout, signup as _signup } from "../../actions";
 import Cart from "../UI/Cart";
 
 const Header = (props) => {
@@ -20,7 +20,7 @@ const Header = (props) => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  // const [error, setError] = useState("");
   const auth = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 
@@ -204,12 +204,15 @@ const Header = (props) => {
 
         <div className="logo">
           <a href="/">
-            <img src={flipkartLogo} className="logoimage" alt="" />
+            {/* <img src={flipkartLogo} className="logoimage" alt="" /> */}
+            <span className="plusText ">AGRI-comm</span>  
+            {/* exploreText */}
+
           </a>
-          <a style={{ marginTop: "-10px" }}>
-            <span className="exploreText">Explore</span>
-            <span className="plusText">Plus</span>
-            <img src={goldenStar} className="goldenStar" alt="" />
+          <a style={{ marginTop: "-10px"}}>
+            {/* <span className="exploreText">Explore</span> */}
+            {/* <span className="plusText">Plus</span> */}
+            {/* <img src={goldenStar} className="goldenStar" alt="" /> */}
           </a>
         </div>
         {/* LOGO ENDS */}

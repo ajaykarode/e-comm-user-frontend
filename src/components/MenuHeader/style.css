@@ -4,6 +4,11 @@
     background: #fff;
     border-bottom: 1px solid #cecece;
     /* box-shadow: 0 2px 2px -2px #333; */
+    /* margin-top: 36px; */
+    margin-top: 56px;
+    /* position: fixed; */
+    z-index: 999;
+    /* margin-bottom: 40px; */
 }
 
 .menuHeader ul{
@@ -16,6 +21,7 @@
     display: flex;
     margin: 0 50px;
     position: relative;
+    
 
 }
 

@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="top">
             <div className="logo-details">
               <span className="logo_name">
-                <span style={{ color: "#fff200" }}>Iffco</span>Bazaar
+                <span style={{ color: "#fff200" }}>Agri</span>Comm
               </span>
             </div>
           </div>
@@ -138,23 +138,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   );
 };

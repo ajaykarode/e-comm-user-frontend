@@ -195,6 +195,7 @@ const CheckoutPage = (props) => {
     );
   }
 
+
   return (
     <Layout>
       <div className="cartContainer" style={{ alignItems: "flex-start" }}>
@@ -232,6 +233,7 @@ const CheckoutPage = (props) => {
                       confirmDeliveryAddress={confirmDeliveryAddress}
                       onAddressSubmit={onAddressSubmit}
                       adr={adr}
+                                    
                     />
                   ))
                 )}
@@ -355,7 +357,6 @@ const CheckoutPage = (props) => {
                     <input type="radio" name="paymentOption" value="cod" />
                     <div>Net Banking</div>
                   </div>
-
                   <MaterialButton
                     title="CONFIRM ORDER"
                     onClick={onConfirmOrder}
@@ -363,6 +364,8 @@ const CheckoutPage = (props) => {
                       width: "200px",
                       margin: "0 0 20px 20px",
                     }}
+                    
+
                   />
                 </div>
               )

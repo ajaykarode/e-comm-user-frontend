@@ -1,49 +1,55 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import "./design.css"
+import "./design.css";
 
 import { Container, Row, Col, Table } from "react-bootstrap";
+import Footer from "../Footer";
 const Payment = () => {
   return (
     <Layout>
-      <Container style={{
-        background:"white"
-      }}>
-        <div >
+      <Container
+        style={{
+          background: "white",
+          marginTop: "10px",
+        }}
+      >
+        <div>
           <div>
-            <div style={{marginLeft:"20px", marginRight:"20px"}}>
+            <div style={{ marginLeft: "20px", marginRight: "20px" }}>
               <div>
-                <h4>Payments</h4>
+                <h5 style={{ color: "white" }}>ajay</h5>
+                <h5>Payments</h5>
               </div>
-              <h4>How do I pay for a Flipkart purchase?</h4>
+              <h5>How do I pay for a AgriComm purchase?</h5>
               <p>
-                Flipkart offers you multiple payment methods. Whatever your
-                online mode of payment, you can rest assured that Flipkart's
+                AgriComm offers you multiple payment methods. Whatever your
+                online mode of payment, you can rest assured that AgriComm's
                 trusted payment gateway partners use secure encryption
                 technology to keep your transaction details confidential at all
-                times. You may use Internet Banking, Gift Card, Cash on Delivery
-                and Wallet to make your purchase. Flipkart also accepts payments
+                times. 
+                You may use Internet Banking, Gift Card, Cash on Delivery
+                and Wallet to make your purchase. AgriComm also accepts payments
                 made using Visa, MasterCard, Maestro and American Express
                 credit/debit cards in India and 21 other countries.
               </p>
 
-              <h4>
+              <h5>
                 Are there any hidden charges (Octroi or Sales Tax) when I make a
-                purchase on Flipkart?
-              </h4>
+                purchase on AgriComm?
+              </h5>
               <p>
                 There are NO hidden charges when you make a purchase on
-                Flipkart. The prices listed for all the items are final and
+                AgriComm. The prices listed for all the items are final and
                 all-inclusive. The price you see on the product page is exactly
                 what you pay. Delivery charges may be extra depending on the
                 seller policy. Please check individual seller for the same. In
                 case of seller WS Retail, the ₹50 delivery charge is waived off
                 on orders worth ₹500 and over
               </p>
-              <h4>What is Cash on Delivery?</h4>
+              <h5>What is Cash on Delivery?</h5>
               <p>
                 If you are not comfortable making an online payment on
-                Flipkart.com, you can opt for the Cash on Delivery (C-o-D)
+                AgriComm.com, you can opt for the Cash on Delivery (C-o-D)
                 payment method instead. With C-o-D you can pay in cash at the
                 time of actual delivery of the product at your doorstep, without
                 requiring you to make any advance payment online. The maximum
@@ -53,7 +59,7 @@ const Payment = () => {
                 be used to make a C-o-D payment. Only Indian Rupees accepted.
               </p>
 
-              <h4>How do I pay using a credit/debit card?</h4>
+              <h5>How do I pay using a credit/debit card?</h5>
               <p>
                 We accept payments made by credit/debit cards issued in India
                 and 21 other countries.
@@ -79,22 +85,22 @@ const Payment = () => {
                   payments/top-ups.
                 </p>
               </p>
-              <h4>Is it safe to use my credit/debit card on Flipkart?</h4>
+              <h5>Is it safe to use my credit/debit card on AgriComm?</h5>
               <p>
-                Your online transaction on Flipkart is secure with the highest
+                Your online transaction on AgriComm is secure with the highest
                 levels of transaction security currently available on the
-                Internet. Flipkart uses 256-bit encryption technology to protect
+                Internet. AgriComm uses 256-bit encryption technology to protect
                 your card information while securely transmitting it to the
                 respective banks for payment processing. All credit card and
-                debit card payments on Flipkart are processed through secure and
+                debit card payments on AgriComm are processed through secure and
                 trusted payment gateways managed by leading banks. Banks now use
                 the 3D Secure password service for online transactions,
                 providing an additional layer of security through identity
                 verification.
               </p>
-              <h4>What steps does Flipkart take to prevent card fraud?</h4>
+              <h5>What steps does AgriComm take to prevent card fraud?</h5>
               <p>
-                Flipkart realizes the importance of a strong fraud detection and
+                AgriComm realizes the importance of a strong fraud detection and
                 resolution capability. We and our online payments partners
                 monitor transactions continuously for suspicious activity and
                 flag potentially fraudulent transactions for manual verification
@@ -108,7 +114,7 @@ const Payment = () => {
                 ensuring a safe and secure environment for online transactions.
               </p>
 
-              <h4>What is a 3D Secure password?</h4>
+              <h5>What is a 3D Secure password?</h5>
               <p>
                 The 3D Secure password is implemented by VISA and MasterCard in
                 partnership with card issuing banks under the "Verified by VISA"
@@ -119,9 +125,9 @@ const Payment = () => {
                 only to you. This ensures that only you can use your card for
                 online purchases.
               </p>
-              <h4>
+              <h5>
                 How can I get the 3D Secure password for my credit/debit card?
-              </h4>
+              </h5>
               <p>
                 You can register for the 3D Secure password for your
                 credit/debit card by visiting your bank's website. The
@@ -169,11 +175,11 @@ const Payment = () => {
                 </Table>
               </p>
 
-              <h4>
+              <h5>
                 Can I use my bank's Internet Banking feature to make a payment?
-              </h4>
+              </h5>
               <p>
-                Yes. Flipkart offers you the convenience of using your bank's
+                Yes. AgriComm offers you the convenience of using your bank's
                 Internet Banking service to make a payment towards your order.
                 With this you can directly transfer funds from your bank
                 account, while conducting a highly secure transaction.
@@ -223,24 +229,24 @@ const Payment = () => {
                 </Table>
               </p>
 
-              <h4>
+              <h5>
                 Can I make a credit/debit card or Internet Banking payment on
-                Flipkart through my mobile?
-              </h4>
+                AgriComm through my mobile?
+              </h5>
               <p>
-                Yes, you can make credit card payments through the Flipkart
-                mobile site and application. Flipkart uses 256-bit encryption
+                Yes, you can make credit card payments through the AgriComm
+                mobile site and application. AgriComm uses 256-bit encryption
                 technology to protect your card information while securely
                 transmitting it to the secure and trusted payment gateways
                 managed by leading banks.
               </p>
 
-              <h4>How does 'Instant Cashback' work?</h4>
+              <h5>How does 'Instant Cashback' work?</h5>
               <p>
-                The 'Cashback' offer is instant and exclusive to Flipkart.com.
+                The 'Cashback' offer is instant and exclusive to AgriComm.com.
                 You only pay the final price you see in your shopping cart.
               </p>
-              <h4>How do I place a Cash on Delivery (C-o-D) order?</h4>
+              <h5>How do I place a Cash on Delivery (C-o-D) order?</h5>
               <p>
                 All items that have the "Cash on Delivery Available" icon are
                 valid for order by Cash on Delivery.
@@ -266,9 +272,9 @@ const Payment = () => {
                 <li>Cash-only payment at the time of delivery.</li>
               </ul>
 
-              <h4>What is Flipkart's credit card EMI option?</h4>
+              <h5>What is AgriComm's credit card EMI option?</h5>
               <p>
-                With Flipkart's credit card EMI option, you can choose to pay in
+                With AgriComm's credit card EMI option, you can choose to pay in
                 easy installments of 3, 6, 9, 12, 18*, or 24 months* with credit
                 cards from the following banks:
               </p>
@@ -348,19 +354,19 @@ const Payment = () => {
                 </tbody>
               </Table>
               <p>
-                There is NO processing fee charged for availing Flipkart's EMI
+                There is NO processing fee charged for availing AgriComm's EMI
                 payment option. On return or exchange, interest charged by the
-                bank till that time will not be refunded by Flipkart.
+                bank till that time will not be refunded by AgriComm.
               </p>
               <p>
                 You may check with the respective bank/issuer on how a
                 cancellation, refund or pre-closure could affect the EMI terms,
                 and what interest charges would be levied on you for the same.
               </p>
-              <h4>Example and Calculations</h4>
+              <h5>Example and Calculations</h5>
               <p>
                 The table below shows a representative rendering of EMI plans
-                for a Rs 20,000 purchase on Flipkart paid using the EMI payment
+                for a Rs 20,000 purchase on AgriComm paid using the EMI payment
                 plan
                 <Table striped bordered hover>
                   <thead>
@@ -409,11 +415,11 @@ const Payment = () => {
                   </tbody>
                 </Table>
               </p>
-              <h4>
-                How do I make a payment using Flipkart's credit card EMI option?
-              </h4>
+              <h5>
+                How do I make a payment using AgriComm's credit card EMI option?
+              </h5>
               <p>
-                Once you've added the desired items to your Flipkart shopping
+                Once you've added the desired items to your AgriComm shopping
                 cart, proceed with your order as usual by entering your address.
                 When you're prompted to choose a payment mode for your order,
                 select 'EMI' & follow these simple steps:
@@ -433,8 +439,17 @@ const Payment = () => {
             </div>
           </div>
         </div>
+      
       </Container>
+
+      {/* <Container> */}
+      <Footer/>
+      {/* </Container> */}
+
+
     </Layout>
+
+    
   );
 };
 
