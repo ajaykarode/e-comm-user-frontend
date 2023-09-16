@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProductsBySlug } from "../../../actions";
 import { Link } from "react-router-dom";
@@ -19,13 +19,14 @@ const ProductStore = (props) => {
   useEffect(() => {
     const { match } = props;
     dispatch(getProductsBySlug(match.params.slug));
-  }, []);
+  }, [dispatch, props]);
 
   return (
     <>
       {Object.keys(product.productsByPrice).map((key, index) => {
         return (
           <Card
+            key={key}
             headerleft=  <h4 style={{fontSize:"18px", fontWeight: "bolder"}}> {`Under ${priceRange[key]}`} </h4>
             headerright={
               <MaterialButton
@@ -43,6 +44,7 @@ const ProductStore = (props) => {
             <div style={{ display: "flex" }}>
               {product.productsByPrice[key].map((product) => (
                 <Link
+                  key={product._id}
                   to={`/${product.slug}/${product._id}/p`}
                   // target="_blank"
                   style={{
@@ -53,12 +55,12 @@ const ProductStore = (props) => {
                   className="productContainer"
                 >
                   <div className="productImgContainer">
-                    {/* <img src={img1} alt="image" /> */}
+                   
 
                     {/* NEW-ADDED */}
                     <img
                       src={generatePublicUrl(product.productPictures[0].img)}
-                      alt="image"
+                      alt={product.name}
                     />
                     {/* acc. to video img is taken from database. video-19, time-46:50. this line implies for the above line. i.e. generatePublicUrl  */}
                     {/* <img src={product.productPictures[0].img} alt="" /> */}

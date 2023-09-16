@@ -4,7 +4,6 @@ import { getOrder } from "../../actions";
 import Layout from "../../components/Layout";
 import Card from "../../components/UI/Card";
 import Price from "../../components/UI/Price";
-import img1 from "../ProductListPage/images/img-1.jpg";
 import "./style.css";
 import { generatePublicUrl } from "../../urlConfig";
 import Footer from "../Footer";
@@ -92,6 +91,7 @@ const OrderDetailsPage = (props) => {
 
         {orderDetails.items.map((item, index) => (
           <Card
+          key={index}
             style={{ display: "flex", padding: "20px 0", margin: "10px 0" }}
           >
             <div className="flexRow">
@@ -112,8 +112,9 @@ const OrderDetailsPage = (props) => {
             </div>
             <div style={{ padding: "25px 50px" }}>
               <div className="orderTrack">
-                {orderDetails.orderStatus.map((status) => (
+                {orderDetails.orderStatus.map((status,index) => (
                   <div
+                  key={index}
                     className={`orderStatus ${
                       status.isCompleted ? "active" : ""
                     }`}

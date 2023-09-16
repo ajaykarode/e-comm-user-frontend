@@ -27,7 +27,7 @@ const ProductDetailsPage = (props) => {
       },
     };
     dispatch(getProductDetailsById(payload));
-  }, []);
+  }, [dispatch, props.match.params.productId]);
 
   if (Object.keys(product.productdetails).length === 0) {
     return null;
@@ -39,7 +39,7 @@ const ProductDetailsPage = (props) => {
         <div className="flexRow">
           <div className="verticalImageStack">
             {product.productdetails.productPictures.map((thumb, index) => (
-              <div className="thumbnail">
+              <div key={index} className="thumbnail">
                 <img src={generatePublicUrl(thumb.img)} alt={thumb.img} />
               </div>
             ))}

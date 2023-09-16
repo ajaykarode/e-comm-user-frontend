@@ -66,6 +66,7 @@ export const addToCart = (product, newQty = 1) => {
   };
 };
 
+
 export const removeCartItem = (payload) => {
   return async (dispatch) => {
     try {

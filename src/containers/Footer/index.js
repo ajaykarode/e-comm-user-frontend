@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import Contact from "../Contact";
+// import Contact from "../Contact";
 
 const Footer = () => {
   return (
@@ -102,22 +102,22 @@ const Footer = () => {
 
       <footer>
         <div className="social-media-links">
-          <a href="https://github.com/ajaykarode" target="_blank">
+          <a href="https://github.com/ajaykarode" target="_blank" rel="noreferrer">
             <i className="fab fab fa-github fa-2x text-white social"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/ajay-karode-63743621a"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             <i className="fab fab fa-linkedin fa-2x text-white social"></i>
           </a>
           <a
             href="https://instagram.com/ajay.karode13?igshid=YmMyMTA2M2Y="
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             <i className="fab fab fa-instagram fa-2x text-white social"></i>
           </a>
-          <a href="https://www.facebook.com/ajay.karode.10" target={"_blank"}>
+          <a href="https://www.facebook.com/ajay.karode.10" target="_blank" rel="noreferrer">
             <i className="fab fab fa-facebook fa-2x text-white social"></i>
           </a>
         </div>

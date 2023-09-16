@@ -12,8 +12,9 @@ import Card from "../../components/UI/Card";
 import CartPage from "../CartPage";
 import AddressForm from "./AddressForm";
 import Footer from "../Footer";
-
 import "./style.css";
+import ThankYou from "../../components/ThankYou";
+
 
 const CheckoutStep = (props) => {
   return (
@@ -189,7 +190,7 @@ const CheckoutPage = (props) => {
     return (
       <Layout>
         <Card>
-          <div>Thank You</div>
+          <div> <ThankYou /> </div>
         </Card>
       </Layout>
     );

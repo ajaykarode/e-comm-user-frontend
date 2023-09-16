@@ -4,7 +4,8 @@
 // }
 
 
-export const api = 'https://e-comm-rest-server-backend-gpzb.onrender.com/api';
+export const api = 'https://agricomm-backend.onrender.com/api/';
 export const generatePublicUrl = (fileName) => {
-    return `https://e-comm-rest-server-backend-gpzb.onrender.com/public/${fileName}`;
+    return `https://agricomm-backend.onrender.com/public/${fileName}`;
 }
+

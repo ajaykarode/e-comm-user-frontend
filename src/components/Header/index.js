@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-import flipkartLogo from "../../images/logo/flipkart.png";
-import goldenStar from "../../images/logo/golden-start.png";
 import { IoIosArrowDown, IoIosSearch } from "react-icons/io";
 import {
   Modal,
