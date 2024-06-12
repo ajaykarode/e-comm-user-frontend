@@ -4,8 +4,8 @@
 // }
 
 
-export const api = 'https://agricomm-backend.onrender.com/api/';
+export const api = 'https://backend-agricomm.onrender.com/api/';
 export const generatePublicUrl = (fileName) => {
-    return `https://agricomm-backend.onrender.com/public/${fileName}`;
+    return `https://backend-agricomm.onrender.com/public/${fileName}`;
 }
 
